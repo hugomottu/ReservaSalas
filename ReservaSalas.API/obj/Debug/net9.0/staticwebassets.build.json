@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "Lwz7miRb6++cQXZtH4Wp/Fj8MxYm8VAE47c6l2HC/no=",
+  "Source": "ReservaSalas.API",
+  "BasePath": "_content/ReservaSalas.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
