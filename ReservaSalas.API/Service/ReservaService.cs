@@ -32,12 +32,18 @@ namespace ReservaSalas.API.Services
 
             // Verifica se já existe reserva para a sala no horário
             var reservasExistentes = GetBySalaId(reservaDto.SalaId);
+            var novaReservaInicio = reservaDto.Data;
+            var novaReservaFim = reservaDto.Data.AddHours(reservaDto.DuracaoEmHoras);
+
             foreach (var reserva in reservasExistentes)
             {
-                if (reserva.Data <= reservaDto.Data.AddHours(reservaDto.DuracaoEmHoras) &&
-                    reservaDto.Data <= reserva.Data.AddHours(reserva.DuracaoEmHoras))
+                var reservaExistenteInicio = reserva.Data;
+                var reservaExistenteFim = reserva.Data.AddHours(reserva.DuracaoEmHoras);
+
+                // Verifica se há sobreposição de horários
+                if (novaReservaInicio < reservaExistenteFim && novaReservaFim > reservaExistenteInicio)
                 {
-                    throw new InvalidOperationException("Já existe uma reserva para esta sala neste horário");
+                    throw new InvalidOperationException($"Já existe uma reserva para esta sala no período das {reservaExistenteInicio:HH:mm} às {reservaExistenteFim:HH:mm}");
                 }
             }
 

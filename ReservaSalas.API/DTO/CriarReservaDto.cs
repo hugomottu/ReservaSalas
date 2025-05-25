@@ -14,7 +14,7 @@ namespace ReservaSalas.API.DTO
         public DateTime Data { get; set; }
 
         [Required(ErrorMessage = "A duração é obrigatória")]
-        [Range(1, 3, ErrorMessage = "A duração deve estar entre 1 e 3 horas")]
+        [Range(1, 8, ErrorMessage = "A duração deve estar entre 1 e 8 horas")]
         public int DuracaoEmHoras { get; set; }
     }
 }
