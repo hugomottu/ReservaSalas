@@ -1,7 +1,8 @@
 namespace ReservaSalas.API.Services
 {
-    public interface ISalasServices //Rafa disse que a interface apenas interpreta meu serviço, padrão e organizar
+    public interface ISalasServices
     {
-        public string GetAll();
+        List<Model.Sala> GetAll();
+        Model.Sala Create(DTO.CriarSalaDto salaDto);
     }
 }
