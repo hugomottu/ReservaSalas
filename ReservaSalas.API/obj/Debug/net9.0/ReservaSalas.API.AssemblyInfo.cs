@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ReservaSalas.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54f183fec6f37bd08a323ada6843b03d9627aba7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b1921a146f2ceae07c2a05a5252c880093c217b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReservaSalas.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ReservaSalas.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

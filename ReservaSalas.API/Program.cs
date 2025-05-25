@@ -9,6 +9,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<ISalasServices, SalasServices>();
+builder.Services.AddScoped<IReservaService, ReservaService>();
+builder.Services.AddScoped<IReservaService, ReservaService>();  
 
 var app = builder.Build();
 
